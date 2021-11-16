@@ -23,8 +23,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -33,17 +33,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.php" class="nav-link">
+                <a href="./index.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard</p>
+                  <p>Dashboard v1</p>
                 </a>
               </li>
           
             </ul>
           </li>
-         <!--  <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
                 <span class="right badge badge-danger">New</span>
@@ -51,8 +51,26 @@
             </a>
           </li> -->
 
-          <li class="nav-item <?php if($fileName == "branch-read.php" || $fileName == "institute-read.php" ||  $fileName == "employee-read.php"){ echo "menu-open";}?>">
-            <a href="#" class="nav-link <?php if($fileName == "branch-read.php" || $fileName == "institute-read.php" ||  $fileName == "employee-read.php"){ echo "active";}?>">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Branches
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="branch-read.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Branches</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Master
@@ -61,21 +79,26 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="branch-read.php" class="nav-link <?php if( $fileName == "branch-read.php" ){ echo "active"; }?>"">
+                <a href="itemdetails.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Branches</p>
+                  <p>Item </p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="institute-read.php" class="nav-link <?php if( $fileName == "institute-read.php" ){ echo "active"; }?>"">
+			  <li class="nav-item">
+                <a href="unitdetails.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Institutes</p>
+                  <p>Unit</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="employee-read.php" class="nav-link <?php if( $fileName == "employee-read.php" ){ echo "active"; }?>">
+			  <li class="nav-item">
+                <a href="catdetails.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Employees</p>
+                  <p>Category</p>
+                </a>
+              </li> <li class="nav-item">
+                <a href="partydetails.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Party</p>
                 </a>
               </li>
             </ul>

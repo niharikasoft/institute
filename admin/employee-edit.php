@@ -112,6 +112,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
           <!-- /.card-body -->
           <div class="card-footer">
           <button type="submit" class="btn btn-primary">Submit</button>
+          <a href="employee-read.php">
+            <button type="button" class="btn btn-default">Cancel</button>
+          </a>
+          
           </div>
           </form>
         </div>
