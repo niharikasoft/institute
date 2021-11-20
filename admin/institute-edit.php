@@ -82,18 +82,18 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         <div class="row">
           <div class="col-md-12">
           <div class="card card-default">
-          <div class="card-header">
-            <h3 class="card-title">Edit Institute</h3>
+            <div class="card-header">
+              <h3 class="card-title">Edit Institute</h3>
 
-            <div class="card-tools">
-             <!--  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove">
-                <i class="fas fa-times"></i>
-              </button> -->
+              <div class="card-tools">
+              <!--  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button> -->
+              </div>
             </div>
-          </div>
           <!-- /.card-header -->
           <div class="card-body">
           <form action="<?php echo $_SERVER['REQUEST_URI'] ; ?>" method="POST">
